@@ -13,13 +13,15 @@
           </div>
 
         <% articles.forEach(article => { %>
-            <div class="card card-header">
-                <h2><%= article.title %></h2>
+            <div class="card">
+                <div class="card card-header">
+                    <h2><%= article.title %></h2>
+                </div>
+                <div class="card-body">
+                    <a href="/<%= article.slug %>" class="btn btn-primary">Ler Artigo</a>
+                </div>
+                <br>
             </div>
-            <div class="card-body">
-                <a href="#" class="btn btn-primary">Ler Artigo</a>
-            </div>
-            <br>
         <% }) %>
     </div>
 </body>
