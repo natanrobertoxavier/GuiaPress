@@ -10,7 +10,9 @@
             <hr class="my-4">
             <p>Desenvolvido como forma de estudo utilizando node, html, bootstrap e muito mais.</p>
             <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a> -->
-          </div>
+        </div>
+
+        <hr>
 
         <% articles.forEach(article => { %>
             <div class="card">
@@ -22,7 +24,16 @@
                 </div>
                 <br>
             </div>
+            <br>
         <% }) %>
+
+        <div class="row">
+            <div class="col col-12">
+                <a style="float:right" href="/articles/page/2">Next</a>
+            </div>
+        </div>
+        <hr>
     </div>
+    <br>
 </body>
 <%- include ('partials/footer.ejs') %>
